@@ -1,9 +1,8 @@
 '''
 Author: Tanvi Khadse
 Purpose: GPA Calculator
-Date: 01/12/2024
+Date: 04/05/2024
 '''
-
 
 
 import tkinter as tk
@@ -50,7 +49,6 @@ def display_help():
     tk.Label(help_tab, text=current_unweighted_gpa_valid_examples_text, font=regular_font, wraplength = wrap_length, justify='left').grid(row=10, column=0, padx=10, pady=5, sticky="w")
     current_unweighted_gpa_valid_examples_text = 'Examples of invalid weighted GPAs: "-2", "5.01", "6"'
     tk.Label(help_tab, text=current_unweighted_gpa_valid_examples_text, font=regular_font, wraplength = wrap_length, justify='left').grid(row=11, column=0, padx=10, pady=5, sticky="w")
-    
 
     
     tk.Label(help_tab, text="Course Name", wraplength = wrap_length, font=heading_font, justify='left').grid(row=12, column=0, padx=10, pady=5, sticky="w")
@@ -82,6 +80,7 @@ def display_help():
 
     notebook.select(help_tab)
 
+
 #this function saves data the user entered into a text document
 def save_file():
     print ("Save File") 
@@ -100,7 +99,8 @@ def save_file():
     messagebox.showinfo("Data Saved!", "Data Saved!")
     invalid_pic = tk.PhotoImage(file="sad.png")  
     window.iconphoto(True, invalid_pic)
- 
+
+
 #this function loads data from the text document into the entry boxes
 def read_file():
     print("Reading file")
